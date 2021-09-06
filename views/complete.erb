@@ -55,6 +55,7 @@
             <% mail = params["target_mail"] %>
             <% tel = params["target_tel"] %>
             <% content = params["target_content"] %>
+            
                 
                 <tr>
                     <td><%= company %></td>
@@ -67,8 +68,10 @@
             </table>
                 
         <div class="text-center mb-4">
+            <form action="/" method="GET">
             <!-- 「戻る」ボタンを緑色にする設定を追加 -->
-            <a href="contact.html" class="btn btn-success">戻る</a>
+            <a href="/" class="btn btn-success">戻る</a>
+            </form>
         </div>
     </div>
     <footer class="text-center pt-3 border-top">
@@ -80,4 +83,4 @@
 </body>
 </html>
 
-<!-- テキストエリアに入力された改行を結果画面で表示する場合、改行記号を <br> に変換する必要があります。たとえば以下のメソッドを利用することで実現可能です。参考にしてください -->
+<!--戻るボタンをクリックしたら/ へ遷移するように変更してください-->
